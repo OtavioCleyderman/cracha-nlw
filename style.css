@@ -7,6 +7,9 @@ body {
   --black: hsla(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,13 +21,14 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 50.75rem;
+  height: 100vh;
 }
 
 .container {
-  max-width: 250px;
+  max-width: 16.63rem;
   margin: 0 auto;
   text-align: center;
 
@@ -81,4 +85,27 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    background-color: black;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
 }
