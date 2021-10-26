@@ -10,7 +10,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,9 +21,9 @@ body {
 
 main {
   background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
+  /* width: 100vw;
   min-height: 50.75rem;
-  height: 100vh;
+  height: 100vh; */
 }
 
 .container {
@@ -73,7 +72,7 @@ a {
 }
 
 p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 ul {
@@ -95,9 +94,12 @@ ul {
   ul {
     margin-top: 1rem;
   }
+  p {
+    margin-top: 1rem;
+  }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1269px) {
   main {
     background: url(images/background-desktop.svg) no-repeat center/cover;
     background-color: black;
@@ -106,6 +108,9 @@ ul {
   }
 
   ul {
+    margin-top: 1rem;
+  }
+  p {
     margin-top: 1rem;
   }
 }
